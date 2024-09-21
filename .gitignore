@@ -1,0 +1,7 @@
+*
+!*/
+!*.*
+!SConstruct
+.sconsign.dblite
+.vscode
+*.o
