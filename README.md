@@ -3,11 +3,22 @@
 ## Prerequisite
 
 ```bash
-brew install zeromq cppzmq 
+$ brew install zeromq cppzmq 
 ```
 
 ## Build
 
 ```bash
-scons
+$ scons
+```
+
+## Usage
+
+- NOTE: Run each command on each terminal tabs
+
+```bash
+$ ./publisher
+$ ./subscriber
+$ ./requester
+$ ./responder
 ```
