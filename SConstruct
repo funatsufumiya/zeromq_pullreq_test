@@ -35,6 +35,9 @@ except:
     print("Error occurred while using pkg-config. Using specified paths.")
 
 # ビルドターゲットの定義
-targets = ['publisher', 'subscriber', 'requester', 'responder']
+targets = [
+    'publisher', 'subscriber', 'requester', 'responder',
+    'pusher', 'puller'
+]
 for target in targets:
     env.Program(target, f'{target}.cpp')
