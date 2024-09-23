@@ -4,7 +4,8 @@
 
 int main() {
     zmq::context_t context(1);
-    zmq::socket_t socket(context, zmq::socket_type::pull);
+    zmq::socket_t socket(context, zmq::socket_type::sub);
+    socket.setsockopt(ZMQ_SUBSCRIBE, "", 0);
     socket.connect("tcp://localhost:5555");
 
     while (true) {

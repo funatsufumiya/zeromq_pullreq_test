@@ -6,7 +6,7 @@
 
 int main() {
     zmq::context_t context(1);
-    zmq::socket_t socket(context, zmq::socket_type::push);
+    zmq::socket_t socket(context, zmq::socket_type::pub);
     socket.bind("tcp://*:5555");
 
     for (int i = 0; ; ++i) {
